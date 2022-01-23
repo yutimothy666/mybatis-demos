@@ -17,5 +17,6 @@ public class Main {
         final SqlSession sqlSession = sessionFactory.openSession();
         final List<Student> listStudent = sqlSession.selectList("listStudent");
         listStudent.forEach(System.out::println);
+        System.out.println("----end--");
     }
 }
